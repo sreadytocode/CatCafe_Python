@@ -7,12 +7,12 @@ class TestCafe(unittest.TestCase):
     def setUp(self):
         self.drink_1 = Drink("Latte", 3.50)
 
-        self.cafe = Cafe("Wonderland")
+        self.cafe = Cafe("Wonderland", 500.00)
 
     def test_does_cafe_have_a_name(self):
         self.assertEqual("Wonderland", self.cafe.name)
 
-    @unittest.skip("WIP")
+    # @unittest.skip("WIP")
     def test_does_cafe_have_a_till(self):
         self.assertEqual(500.00, self.cafe.till)
 
