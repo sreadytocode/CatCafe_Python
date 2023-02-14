@@ -7,6 +7,8 @@ class TestCafe(unittest.TestCase):
     def setUp(self):
         self.drink_1 = Drink("Latte", 3.50)
 
+        self.cafe = Cafe("Wonderland")
+
     def test_does_cafe_have_a_name(self):
         self.assertEqual("Wonderland", self.cafe.name)
 
