@@ -11,4 +11,4 @@ class TestDrink(unittest.TestCase):
 
     # @unittest.skip("WIP")
     def test_does_drink_has_a_price(self):
-        self.assertEquals(3.20, self.drink.price)
+        self.assertEqual(3.20, self.drink.price)
