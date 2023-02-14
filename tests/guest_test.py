@@ -10,4 +10,4 @@ class TestGuest(unittest.TestCase):
         self.assertEqual("Liddell", self.guest.last_name)
 
     def test_does_guest_have_cash(self):
-        self.assertEqual(50.0, self.guest.cash)
+        self.assertEqual(50.00, self.guest.wallet)
