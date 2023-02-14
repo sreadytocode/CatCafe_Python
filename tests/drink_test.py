@@ -4,7 +4,7 @@ from classes.drink import Drink
 class TestDrink(unittest.TestCase):
     
     def setUp(self):
-        self.drink = Drink()
+        self.drink = Drink("Latte")
 
     def test_does_drink_has_a_name(self):
         self.assertEqual("Latte", self.drink.name)
