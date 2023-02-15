@@ -25,9 +25,9 @@ class TestCafe(unittest.TestCase):
     def test_drink_stock_level_0_if_drink_not_in_stock(self):
         self.assertEqual(0, self.cafe.drink_stock_level(self.drink_1))
 
-    @unittest.skip("WIP")
+    # @unittest.skip("WIP")
     def test_cafe_can_add_drink(self):
-        self.cafe.add_drink(self.drink_1)
+        self.cafe.add_drink(self.drink_2)
         self.assertEqual(1, self.cafe.drink_stock_level(self.drink_2))
-        self.assertEqual(3.50, self.cafe.stock_value())
+        self.assertEqual(3.50, self.cafe.drink_stock_value())
 

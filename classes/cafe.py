@@ -17,3 +17,9 @@ class Cafe:
             total += (drink.price * self.drink_stock[drink])
 
         return total
+
+    def add_drink(self, drink):
+        if drink in self.drink_stock:
+            self.drink_stock[drink] += 1
+        else:
+            self.drink_stock[drink] = 1
